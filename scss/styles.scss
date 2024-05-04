@@ -1,0 +1,103 @@
+body{
+    background-color: antiquewhite;
+}
+
+header{ margin: 10px;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        align-items: center;
+        color: blueviolet;
+        background-color: rgb(233, 182, 248);
+        padding: 10%;
+ nav{
+        ul{ list-style: none;
+            display: flex;
+            gap: 30px;
+            flex-wrap: wrap;
+            }
+        }
+ h3{    display: flex;
+        text-align: center;
+        justify-content: center;
+        margin: 20px;
+        color: blueviolet;
+        font-size: 20px;
+        font-family: 'Lucida Sans';
+         } 
+    }
+
+main{ display: grid;
+ div{
+        img{width: 100%;
+            height: 100%;
+            object-fit: cover;
+            height: 40vh;
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-template-rows: repeat(6, 25%);
+            align-content: center;
+            gap: 30px;
+            margin: 30px 20px;
+            }
+        p{  display: grid;
+            width: 100%;
+            margin: 30px 20px;
+            }    
+        }
+    }    
+
+section{
+        h2{ display: grid;
+            width: 100%;
+            font-size: 25px;
+            color: darkorchid;
+            margin: 20px;
+            }
+        em{ color: violet;
+            text-align: left;
+            background-color: bisque;
+            }
+        div{display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            width: 100%;
+            justify-content: space-around;
+            }
+        }    
+
+.imagenes { width: 200px; height: 200px;
+            border-radius: 30%;
+             }
+            
+.boton {    font-size: 20px;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            width: 140px;
+            height: 140px;
+            text-align: center;
+        }
+
+footer{ display: flex;
+        flex-direction: column;
+        font-size: 20px;
+        justify-content: space-between;
+        margin-bottom: 10px;
+        padding: 10px;
+            li{ list-style: none;
+                margin-top: 10px;
+                }
+            p{  text-align: center;
+                }
+        }        
+
+@media only screen and (min-width: 600px) {
+                                        main { grid-template-columns: repeat(2, 1fr);
+                                        grid-template-rows: repeat(3, 50%);
+                                                }
+                                            }
+
+@media only screen and (min-width: 1024px) {
+                                        main{ grid-template-columns: repeat(3, 1fr);
+                                        grid-template-rows: repeat(2, 50%);
+                                                }
+                                            }
