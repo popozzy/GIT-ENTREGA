@@ -43,10 +43,8 @@ main div img {
   gap: 30px;
   margin: 30px 20px;
 }
-main div p {
-  display: grid;
-  width: 100%;
-  margin: 30px 20px;
+main p{
+  display: block;
 }
 
 section h2 {

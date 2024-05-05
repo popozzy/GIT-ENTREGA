@@ -2,49 +2,80 @@ body{
     background-color: antiquewhite;
 }
 
-header{ margin: 10px;
-        display: flex;
-        justify-content: space-between;
-        flex-wrap: wrap;
+header{ 
         align-items: center;
         color: blueviolet;
         background-color: rgb(233, 182, 248);
         padding: 10%;
- nav{
+    
+    nav{
         ul{ list-style: none;
             display: flex;
             gap: 30px;
             flex-wrap: wrap;
             }
         }
- h3{    display: flex;
-        text-align: center;
-        justify-content: center;
-        margin: 20px;
-        color: blueviolet;
-        font-size: 20px;
-        font-family: 'Lucida Sans';
+    
+    div{
+        h1{ display: flex;
+            text-align: center;
+            justify-content: center;
+            margin: 20px;
+            color: blueviolet;
+            font-size: 20px;
+            font-family: 'Lucida Sans';
          } 
-    }
-
-main{ display: grid;
- div{
-        img{width: 100%;
-            height: 100%;
-            object-fit: cover;
-            height: 40vh;
-            display: grid;
-            grid-template-columns: 1fr;
-            grid-template-rows: repeat(6, 25%);
-            align-content: center;
-            gap: 30px;
-            margin: 30px 20px;
-            }
-        p{  display: grid;
-            width: 100%;
-            margin: 30px 20px;
-            }    
+        
+        h2{ display: flex;
+            text-align: center;
+            justify-content: center;
+            margin: 20px;
+            color: blueviolet;
+            font-size: 20px;
+            font-family: 'Lucida Sans';
+                }
+         }
         }
+
+
+main{   display: flex;
+        flex-direction: column; 
+        flex-wrap: wrap;
+    
+        div{
+            img{width: 100%;
+                height: 100%;
+                object-fit: cover;
+                height: 40vh;
+                display: grid;
+                grid-template-columns: 1fr;
+                grid-template-rows: repeat(6, 25%);
+                align-content: center;
+                gap: 30px;
+                margin: 30px 20px;
+            }
+        
+
+        .imagenes { display: flex;
+                    flex-direction: row;
+                    justify-content: center;
+                    align-items: center;
+                    width: 200px; 
+                    height: 200px;
+                    border-radius: 30%;
+                    }  
+        }
+
+        p{  display: block;           
+            }    
+        
+        h1{     text-align: center;
+                margin: 20px;
+                color: blueviolet;
+                font-size: 90px;
+                background-color: blanchedalmond;
+                font-family: 'Lucida Sans';
+                    }          
     }    
 
 section{
@@ -65,10 +96,6 @@ section{
             justify-content: space-around;
             }
         }    
-
-.imagenes { width: 200px; height: 200px;
-            border-radius: 30%;
-             }
             
 .boton {    font-size: 20px;
             font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -83,10 +110,12 @@ footer{ display: flex;
         justify-content: space-between;
         margin-bottom: 10px;
         padding: 10px;
-            li{ list-style: none;
+            
+        li{ list-style: none;
                 margin-top: 10px;
                 }
-            p{  text-align: center;
+        
+        p{  text-align: center;
                 }
         }        
 
